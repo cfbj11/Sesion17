@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Sesion17.Formularios;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,17 @@ namespace Sesion17
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void productosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ProductoFrm Frm = new ProductoFrm();
+            Frm.ShowDialog();
+        }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -11,6 +11,11 @@ namespace Sesion17.Servicios
     {
         List<Producto> productos = new List<Producto>();
 
+        public List<Producto> Productos()
+        {
+            return productos;
+        }
+
         public void AgregarProducto(Producto producto)
         {
             productos.Add(producto);
